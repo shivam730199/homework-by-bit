@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Print operation result based on user choice: add, subtract, multiply</title>
+</head>
+<body>
+    <script>
+            const choice = prompt("Enter operation (add, subtract, multiply):").toLowerCase();
+const num1 = parseFloat(prompt("Enter first number:"));
+const num2 = parseFloat(prompt("Enter second number:"));
+
+let result;
+
+switch (choice) {
+  case "add":
+    result = num1 + num2;
+    break;
+  case "subtract":
+    result = num1 - num2;
+    break;
+  case "multiply":
+    result = num1 * num2;
+    break;
+  default:
+    result = "Invalid operation.";
+}
+
+    </script>
+</body>
+</html>
